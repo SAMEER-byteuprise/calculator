@@ -81,6 +81,10 @@ binding.zero.setOnClickListener {
         binding.plus.setOnClickListener {
             binding.inputtext.append("+")
         }
+
+        binding.percntge.setOnClickListener {
+            binding.inputtext.append("%")
+        }
         binding.equal.setOnClickListener {
            val expression = ExpressionBuilder(binding.inputtext.text.toString()).build()
             val result = expression.evaluate()
